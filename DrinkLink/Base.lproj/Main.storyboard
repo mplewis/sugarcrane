@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U8E-iF-8JA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DrinkLink-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkLink" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="wheel"/>
                                 <connections>
-                                    <action selector="wheelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTA-xZ-jyJ"/>
+                                    <segue destination="ddc-vK-991" kind="show" id="Ban-7d-E9f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
@@ -37,7 +37,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="beer"/>
                                 <connections>
-                                    <action selector="beerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chI-K4-fXq"/>
+                                    <segue destination="ddc-vK-991" kind="show" id="MGU-mp-WwN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,12 +49,75 @@
                             <constraint firstItem="4WZ-Fv-EVu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qbY-gW-ULw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="DrinkLink" id="PcC-L6-hmO"/>
                     <connections>
                         <outlet property="beer" destination="62N-3E-aVr" id="pjE-jm-Y5e"/>
                         <outlet property="wheel" destination="4WZ-Fv-EVu" id="Z6Q-kK-RQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="521"/>
+        </scene>
+        <!--Select Bean Table View Controller-->
+        <scene sceneID="kcT-7G-5Nf">
+            <objects>
+                <tableViewController storyboardIdentifier="SelectBean" id="ddc-vK-991" customClass="SelectBeanTableViewController" customModule="DrinkLink" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MHE-sv-Upp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="kZa-mt-2Ak" detailTextLabel="lb4-Ql-Qao" style="IBUITableViewCellStyleValue1" id="zhf-ej-BZ3">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zhf-ej-BZ3" id="uvC-Ku-C28">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kZa-mt-2Ak">
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lb4-Ql-Qao">
+                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ddc-vK-991" id="k0w-8r-FoJ"/>
+                            <outlet property="delegate" destination="ddc-vK-991" id="jAL-5r-yD3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bkr-Hp-oM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149" y="521"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l1g-FP-OFb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U8E-iF-8JA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xYN-ah-pgx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5LP-fI-ISZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0c-ZO-7sY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="599" y="521"/>
         </scene>
@@ -63,4 +126,7 @@
         <image name="beer" width="250" height="460"/>
         <image name="wheel" width="488" height="494"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MGU-mp-WwN"/>
+    </inferredMetricsTieBreakers>
 </document>

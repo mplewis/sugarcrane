@@ -12,6 +12,7 @@
 		36DF56E01C435B1C00F7F7E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36DF56DE1C435B1C00F7F7E5 /* Main.storyboard */; };
 		36DF56E21C435B1C00F7F7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DF56E11C435B1C00F7F7E5 /* Assets.xcassets */; };
 		36DF56E51C435B1C00F7F7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36DF56E31C435B1C00F7F7E5 /* LaunchScreen.storyboard */; };
+		36DF56EE1C43684F00F7F7E5 /* SelectBeanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF56ED1C43684F00F7F7E5 /* SelectBeanTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		36DF56E11C435B1C00F7F7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36DF56E41C435B1C00F7F7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36DF56E61C435B1C00F7F7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36DF56ED1C43684F00F7F7E5 /* SelectBeanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBeanTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				36DF56DA1C435B1C00F7F7E5 /* AppDelegate.swift */,
 				36DF56DC1C435B1C00F7F7E5 /* ViewController.swift */,
+				36DF56ED1C43684F00F7F7E5 /* SelectBeanTableViewController.swift */,
 				36DF56DE1C435B1C00F7F7E5 /* Main.storyboard */,
 				36DF56E11C435B1C00F7F7E5 /* Assets.xcassets */,
 				36DF56E31C435B1C00F7F7E5 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DF56EE1C43684F00F7F7E5 /* SelectBeanTableViewController.swift in Sources */,
 				36DF56DD1C435B1C00F7F7E5 /* ViewController.swift in Sources */,
 				36DF56DB1C435B1C00F7F7E5 /* AppDelegate.swift in Sources */,
 			);
