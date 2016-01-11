@@ -127,6 +127,7 @@
 				TargetAttributes = {
 					36DF56D61C435B1B00F7F7E5 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R5JUTH26F4;
 					};
 				};
 			};
@@ -344,10 +345,12 @@
 			baseConfigurationReference = E7A20A1BB71245B5D5018400 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DrinkLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bdf7ac45-dbf3-4f8e-8986-b7e6c28c67e4";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
@@ -357,10 +360,12 @@
 			baseConfigurationReference = A8C62FCC344426706169D3B2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DrinkLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bdf7ac45-dbf3-4f8e-8986-b7e6c28c67e4";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
