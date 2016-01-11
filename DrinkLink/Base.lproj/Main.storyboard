@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
-                                <rect key="frame" x="450" y="180" width="130" height="240"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
+                                <rect key="frame" x="390.5" y="125" width="189.5" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="8pD-qu-hh8"/>
                                     <constraint firstAttribute="width" secondItem="62N-3E-aVr" secondAttribute="height" multiplier="13:24" id="Y2A-Z7-YgJ"/>
@@ -37,8 +37,8 @@
                                     <segue destination="ddc-vK-991" kind="show" identifier="beer" id="MGU-mp-WwN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
-                                <rect key="frame" x="20" y="210" width="180" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
+                                <rect key="frame" x="20" y="125" width="350.5" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4WZ-Fv-EVu" secondAttribute="height" multiplier="1:1" id="XiF-uK-Gmo"/>
                                     <constraint firstAttribute="height" constant="180" id="dSs-yY-5Fv"/>
