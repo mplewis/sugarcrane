@@ -26,7 +26,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="wheel"/>
                                 <connections>
-                                    <segue destination="ddc-vK-991" kind="show" id="Ban-7d-E9f"/>
+                                    <segue destination="ddc-vK-991" kind="show" identifier="wheel" id="Ban-7d-E9f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
@@ -37,7 +37,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="beer"/>
                                 <connections>
-                                    <segue destination="ddc-vK-991" kind="show" id="MGU-mp-WwN"/>
+                                    <segue destination="ddc-vK-991" kind="show" identifier="beer" id="MGU-mp-WwN"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -1,6 +1,9 @@
 import UIKit
 
 class SelectBeanTableViewController: UITableViewController {
+    
+    var sender: ViewController?
+    var senderSegue: NSString?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,15 @@ class SelectBeanTableViewController: UITableViewController {
         cell.detailTextLabel!.text = "-42"
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (senderSegue == "wheel") {
+            sender!.wheelBeanSelected()
+        } else {
+            sender!.beerBeanSelected()
+        }
+        navigationController!.popViewControllerAnimated(true)
     }
 
 }
