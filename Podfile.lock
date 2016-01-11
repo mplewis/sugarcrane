@@ -1,0 +1,13 @@
+PODS:
+  - Bean-iOS-OSX-SDK (0.10.1)
+  - SwiftHEXColors (1.0.0)
+
+DEPENDENCIES:
+  - Bean-iOS-OSX-SDK
+  - SwiftHEXColors
+
+SPEC CHECKSUMS:
+  Bean-iOS-OSX-SDK: 0a79eab21e5bbb276e4f42a19d894ba947accf02
+  SwiftHEXColors: 87bb7cfef19e1a5c93c75c21df60464e6f960062
+
+COCOAPODS: 0.39.0

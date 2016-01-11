@@ -121,6 +121,17 @@
                             <outlet property="delegate" destination="ddc-vK-991" id="jAL-5r-yD3"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Refresh" id="EvG-th-Mhy">
+                            <connections>
+                                <action selector="refreshTapped:" destination="ddc-vK-991" id="sgo-jC-WGW"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tV" destination="MHE-sv-Upp" id="v9A-E3-jPE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bkr-Hp-oM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

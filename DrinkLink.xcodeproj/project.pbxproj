@@ -13,6 +13,7 @@
 		36DF56E21C435B1C00F7F7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DF56E11C435B1C00F7F7E5 /* Assets.xcassets */; };
 		36DF56E51C435B1C00F7F7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36DF56E31C435B1C00F7F7E5 /* LaunchScreen.storyboard */; };
 		36DF56EE1C43684F00F7F7E5 /* SelectBeanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF56ED1C43684F00F7F7E5 /* SelectBeanTableViewController.swift */; };
+		7E39DACA76C9DD9F15AC2BD0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A394C63F2E3A32CB19173A /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		36DF56E41C435B1C00F7F7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36DF56E61C435B1C00F7F7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DF56ED1C43684F00F7F7E5 /* SelectBeanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectBeanTableViewController.swift; sourceTree = "<group>"; };
+		47A394C63F2E3A32CB19173A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C62FCC344426706169D3B2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E7A20A1BB71245B5D5018400 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E39DACA76C9DD9F15AC2BD0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				36DF56D91C435B1B00F7F7E5 /* DrinkLink */,
 				36DF56D81C435B1B00F7F7E5 /* Products */,
+				6879FC492D517D82E809F0BC /* Pods */,
+				D683E73095FBBC14AA9215F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = DrinkLink;
 			sourceTree = "<group>";
 		};
+		6879FC492D517D82E809F0BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7A20A1BB71245B5D5018400 /* Pods.debug.xcconfig */,
+				A8C62FCC344426706169D3B2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D683E73095FBBC14AA9215F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A394C63F2E3A32CB19173A /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +98,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36DF56E91C435B1C00F7F7E5 /* Build configuration list for PBXNativeTarget "DrinkLink" */;
 			buildPhases = (
+				40B4C981AB7F3B7D6D3D0A57 /* Check Pods Manifest.lock */,
 				36DF56D31C435B1B00F7F7E5 /* Sources */,
 				36DF56D41C435B1B00F7F7E5 /* Frameworks */,
 				36DF56D51C435B1B00F7F7E5 /* Resources */,
 				36DF56EC1C435B6C00F7F7E5 /* Increment Build Number */,
+				6D8DAA6D82CF76C85E030578 /* Embed Pods Frameworks */,
+				8F1DF8C2F970FFB31A32317A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+		40B4C981AB7F3B7D6D3D0A57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8DAA6D82CF76C85E030578 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1DF8C2F970FFB31A32317A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -269,23 +341,27 @@
 		};
 		36DF56EA1C435B1C00F7F7E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A20A1BB71245B5D5018400 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrinkLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
 		36DF56EB1C435B1C00F7F7E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C62FCC344426706169D3B2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrinkLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -308,6 +384,7 @@
 				36DF56EB1C435B1C00F7F7E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
