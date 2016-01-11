@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,56 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-mj-E2v">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
                                 <rect key="frame" x="20" y="210" width="180" height="180"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="B0P-AB-O3B"/>
-                                    <constraint firstAttribute="width" secondItem="2rY-mj-E2v" secondAttribute="height" multiplier="1:1" id="Fe7-EL-ttA"/>
-                                    <constraint firstAttribute="width" constant="180" id="S88-um-RJz"/>
-                                    <constraint firstAttribute="height" constant="240" id="YqY-8K-snG"/>
+                                    <constraint firstAttribute="height" constant="180" id="dSs-yY-5Fv"/>
+                                    <constraint firstAttribute="width" constant="180" id="rhe-Ws-hQT"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Fe7-EL-ttA"/>
-                                        <exclude reference="YqY-8K-snG"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-cq-eHY">
+                                <state key="normal" title="Button" image="wheel"/>
+                                <connections>
+                                    <action selector="wheelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTA-xZ-jyJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
                                 <rect key="frame" x="450" y="180" width="130" height="240"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Pjk-cq-eHY" secondAttribute="height" multiplier="25:46" id="15V-wo-5Ad"/>
-                                    <constraint firstAttribute="height" constant="240" id="KZV-Sp-xvn"/>
-                                    <constraint firstAttribute="width" secondItem="Pjk-cq-eHY" secondAttribute="height" multiplier="1:1" id="fYi-vF-duz"/>
-                                    <constraint firstAttribute="width" constant="130" id="oTv-bP-IX3"/>
+                                    <constraint firstAttribute="height" constant="240" id="8pD-qu-hh8"/>
+                                    <constraint firstAttribute="width" constant="130" id="vMs-IZ-Zy2"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="15V-wo-5Ad"/>
-                                        <exclude reference="fYi-vF-duz"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
+                                <state key="normal" title="Button" image="beer"/>
+                                <connections>
+                                    <action selector="beerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chI-K4-fXq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2rY-mj-E2v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NE5-zb-3pl"/>
-                            <constraint firstItem="Pjk-cq-eHY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qt7-5u-7Y4"/>
-                            <constraint firstItem="2rY-mj-E2v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y3E-Kb-e9f"/>
-                            <constraint firstItem="2rY-mj-E2v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d6d-rS-zX3"/>
-                            <constraint firstItem="2rY-mj-E2v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="jL1-nt-e24"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="2rY-mj-E2v" secondAttribute="leading" id="lXy-cY-XTW"/>
-                            <constraint firstItem="Pjk-cq-eHY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ybn-84-tOC"/>
+                            <constraint firstItem="62N-3E-aVr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U04-JF-jXk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="62N-3E-aVr" secondAttribute="trailing" id="bar-CN-mvV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4WZ-Fv-EVu" secondAttribute="leading" id="pNh-5Q-g83"/>
+                            <constraint firstItem="4WZ-Fv-EVu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qbY-gW-ULw"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Y3E-Kb-e9f"/>
-                                <exclude reference="d6d-rS-zX3"/>
-                                <exclude reference="jL1-nt-e24"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="beer" destination="62N-3E-aVr" id="pjE-jm-Y5e"/>
+                        <outlet property="wheel" destination="4WZ-Fv-EVu" id="Z6Q-kK-RQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
