@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,36 +19,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
+                                <rect key="frame" x="450" y="180" width="130" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="8pD-qu-hh8"/>
+                                    <constraint firstAttribute="width" secondItem="62N-3E-aVr" secondAttribute="height" multiplier="13:24" id="Y2A-Z7-YgJ"/>
+                                    <constraint firstAttribute="width" constant="130" id="vMs-IZ-Zy2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="beer"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8pD-qu-hh8"/>
+                                        <exclude reference="vMs-IZ-Zy2"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="ddc-vK-991" kind="show" identifier="beer" id="MGU-mp-WwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
                                 <rect key="frame" x="20" y="210" width="180" height="180"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="4WZ-Fv-EVu" secondAttribute="height" multiplier="1:1" id="XiF-uK-Gmo"/>
                                     <constraint firstAttribute="height" constant="180" id="dSs-yY-5Fv"/>
                                     <constraint firstAttribute="width" constant="180" id="rhe-Ws-hQT"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="wheel"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dSs-yY-5Fv"/>
+                                        <exclude reference="rhe-Ws-hQT"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="ddc-vK-991" kind="show" identifier="wheel" id="Ban-7d-E9f"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
-                                <rect key="frame" x="450" y="180" width="130" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="8pD-qu-hh8"/>
-                                    <constraint firstAttribute="width" constant="130" id="vMs-IZ-Zy2"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="beer"/>
-                                <connections>
-                                    <segue destination="ddc-vK-991" kind="show" identifier="beer" id="MGU-mp-WwN"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="62N-3E-aVr" firstAttribute="height" secondItem="4WZ-Fv-EVu" secondAttribute="height" id="26M-F7-V2c"/>
+                            <constraint firstItem="62N-3E-aVr" firstAttribute="height" secondItem="4WZ-Fv-EVu" secondAttribute="height" id="9FU-nH-bn5"/>
+                            <constraint firstItem="62N-3E-aVr" firstAttribute="leading" secondItem="4WZ-Fv-EVu" secondAttribute="trailing" constant="20" id="CVv-Rk-0G1"/>
                             <constraint firstItem="62N-3E-aVr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U04-JF-jXk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="62N-3E-aVr" secondAttribute="trailing" id="bar-CN-mvV"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4WZ-Fv-EVu" secondAttribute="leading" id="pNh-5Q-g83"/>
                             <constraint firstItem="4WZ-Fv-EVu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qbY-gW-ULw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="26M-F7-V2c"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="DrinkLink" id="PcC-L6-hmO"/>
                     <connections>
