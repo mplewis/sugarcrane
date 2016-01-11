@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +18,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="duffman" translatesAutoresizingMaskIntoConstraints="NO" id="nGd-Ya-LCD">
+                                <rect key="frame" x="0.0" y="-155.5" width="600" height="911"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nGd-Ya-LCD" secondAttribute="height" multiplier="843:1280" id="5Nq-0G-Vua"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Nq-0G-Vua"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nGd-Ya-LCD" secondAttribute="trailing" id="23R-tV-alH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nGd-Ya-LCD" secondAttribute="trailing" constant="-20" id="355-uo-dkU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nGd-Ya-LCD" secondAttribute="bottom" id="NLE-Oy-bIb"/>
+                            <constraint firstItem="nGd-Ya-LCD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Srd-pf-63U"/>
+                            <constraint firstItem="nGd-Ya-LCD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="abB-0f-nbM"/>
+                            <constraint firstItem="nGd-Ya-LCD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="g0V-Q9-GXg"/>
+                            <constraint firstItem="nGd-Ya-LCD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tEl-6N-oYh"/>
+                            <constraint firstItem="nGd-Ya-LCD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="yL3-ng-7kY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="23R-tV-alH"/>
+                                <exclude reference="Srd-pf-63U"/>
+                                <exclude reference="g0V-Q9-GXg"/>
+                                <exclude reference="tEl-6N-oYh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-419" y="341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="duffman" width="843" height="1280"/>
+    </resources>
 </document>
