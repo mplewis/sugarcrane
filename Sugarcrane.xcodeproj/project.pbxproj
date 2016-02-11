@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36DF56D71C435B1B00F7F7E5 /* DrinkLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DF56D71C435B1B00F7F7E5 /* Sugarcrane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sugarcrane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DF56DA1C435B1C00F7F7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36DF56DC1C435B1C00F7F7E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36DF56DF1C435B1C00F7F7E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		36DF56CE1C435B1B00F7F7E5 = {
 			isa = PBXGroup;
 			children = (
-				36DF56D91C435B1B00F7F7E5 /* DrinkLink */,
+				36DF56D91C435B1B00F7F7E5 /* Sugarcrane */,
 				36DF56D81C435B1B00F7F7E5 /* Products */,
 				6879FC492D517D82E809F0BC /* Pods */,
 				D683E73095FBBC14AA9215F8 /* Frameworks */,
@@ -55,12 +55,12 @@
 		36DF56D81C435B1B00F7F7E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36DF56D71C435B1B00F7F7E5 /* DrinkLink.app */,
+				36DF56D71C435B1B00F7F7E5 /* Sugarcrane.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36DF56D91C435B1B00F7F7E5 /* DrinkLink */ = {
+		36DF56D91C435B1B00F7F7E5 /* Sugarcrane */ = {
 			isa = PBXGroup;
 			children = (
 				36DF56DA1C435B1C00F7F7E5 /* AppDelegate.swift */,
@@ -71,7 +71,7 @@
 				36DF56E31C435B1C00F7F7E5 /* LaunchScreen.storyboard */,
 				36DF56E61C435B1C00F7F7E5 /* Info.plist */,
 			);
-			path = DrinkLink;
+			path = Sugarcrane;
 			sourceTree = "<group>";
 		};
 		6879FC492D517D82E809F0BC /* Pods */ = {
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36DF56D61C435B1B00F7F7E5 /* DrinkLink */ = {
+		36DF56D61C435B1B00F7F7E5 /* Sugarcrane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36DF56E91C435B1C00F7F7E5 /* Build configuration list for PBXNativeTarget "DrinkLink" */;
+			buildConfigurationList = 36DF56E91C435B1C00F7F7E5 /* Build configuration list for PBXNativeTarget "Sugarcrane" */;
 			buildPhases = (
 				40B4C981AB7F3B7D6D3D0A57 /* Check Pods Manifest.lock */,
 				36DF56D31C435B1B00F7F7E5 /* Sources */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = DrinkLink;
+			name = Sugarcrane;
 			productName = DrinkLink;
-			productReference = 36DF56D71C435B1B00F7F7E5 /* DrinkLink.app */;
+			productReference = 36DF56D71C435B1B00F7F7E5 /* Sugarcrane.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36DF56D21C435B1B00F7F7E5 /* Build configuration list for PBXProject "DrinkLink" */;
+			buildConfigurationList = 36DF56D21C435B1B00F7F7E5 /* Build configuration list for PBXProject "Sugarcrane" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36DF56D61C435B1B00F7F7E5 /* DrinkLink */,
+				36DF56D61C435B1B00F7F7E5 /* Sugarcrane */,
 			);
 		};
 /* End PBXProject section */
@@ -346,11 +346,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = DrinkLink/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sugarcrane/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.Sugarcrane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bdf7ac45-dbf3-4f8e-8986-b7e6c28c67e4";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
@@ -360,12 +360,12 @@
 			baseConfigurationReference = A8C62FCC344426706169D3B2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = DrinkLink/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				INFOPLIST_FILE = "$(SRCROOT)/Sugarcrane/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.DrinkLink;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punchthrough.Sugarcrane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bdf7ac45-dbf3-4f8e-8986-b7e6c28c67e4";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
@@ -373,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36DF56D21C435B1B00F7F7E5 /* Build configuration list for PBXProject "DrinkLink" */ = {
+		36DF56D21C435B1B00F7F7E5 /* Build configuration list for PBXProject "Sugarcrane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DF56E71C435B1C00F7F7E5 /* Debug */,
@@ -382,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36DF56E91C435B1C00F7F7E5 /* Build configuration list for PBXNativeTarget "DrinkLink" */ = {
+		36DF56E91C435B1C00F7F7E5 /* Build configuration list for PBXNativeTarget "Sugarcrane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DF56EA1C435B1C00F7F7E5 /* Debug */,

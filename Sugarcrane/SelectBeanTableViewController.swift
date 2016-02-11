@@ -85,11 +85,7 @@ class SelectBeanTableViewController: UITableViewController, PTDBeanManagerDelega
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let bean = beans[indexPath.row]
-        if (senderSegue == "wheel") {
-            sender!.wheelBeanSelected(bean)
-        } else {
-            sender!.beerBeanSelected(bean)
-        }
+        sender!.quadcopterBeanSelected(bean)
         navigationController!.popViewControllerAnimated(true)
     }
 

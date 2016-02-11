@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U8E-iF-8JA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U8E-iF-8JA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--DrinkLink-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinkLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sugarcrane" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,63 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62N-3E-aVr">
-                                <rect key="frame" x="390.5" y="125" width="189.5" height="350"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBh-zc-6kB">
+                                <rect key="frame" x="203" y="368" width="195" height="89"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="8pD-qu-hh8"/>
-                                    <constraint firstAttribute="width" secondItem="62N-3E-aVr" secondAttribute="height" multiplier="13:24" id="Y2A-Z7-YgJ"/>
-                                    <constraint firstAttribute="width" constant="130" id="vMs-IZ-Zy2"/>
+                                    <constraint firstAttribute="width" constant="195" id="98Y-kz-N5v"/>
+                                    <constraint firstAttribute="height" constant="89" id="a8I-SV-c8N"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="beer"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8pD-qu-hh8"/>
-                                        <exclude reference="vMs-IZ-Zy2"/>
-                                    </mask>
-                                </variation>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <state key="normal" title="Deploy"/>
                                 <connections>
-                                    <segue destination="ddc-vK-991" kind="show" identifier="beer" id="MGU-mp-WwN"/>
+                                    <action selector="openPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNG-yI-Tap"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-Fv-EVu">
-                                <rect key="frame" x="20" y="125" width="350.5" height="350"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-b9-4IF">
+                                <rect key="frame" x="161" y="255" width="279" height="89"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="4WZ-Fv-EVu" secondAttribute="height" multiplier="1:1" id="XiF-uK-Gmo"/>
-                                    <constraint firstAttribute="height" constant="180" id="dSs-yY-5Fv"/>
-                                    <constraint firstAttribute="width" constant="180" id="rhe-Ws-hQT"/>
+                                    <constraint firstAttribute="width" constant="279" id="QcN-bv-vQP"/>
+                                    <constraint firstAttribute="height" constant="89" id="YJN-XW-lUZ"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="wheel"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dSs-yY-5Fv"/>
-                                        <exclude reference="rhe-Ws-hQT"/>
-                                    </mask>
-                                </variation>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <state key="normal" title="Close Bay"/>
                                 <connections>
-                                    <segue destination="ddc-vK-991" kind="show" identifier="wheel" id="Ban-7d-E9f"/>
+                                    <action selector="closePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkq-h9-k5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tv-pO-0o0">
+                                <rect key="frame" x="181" y="96" width="238" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="XaJ-xE-4hu"/>
+                                    <constraint firstAttribute="height" constant="135" id="oKi-xs-fM8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="quadcopter"/>
+                                <connections>
+                                    <segue destination="ddc-vK-991" kind="show" id="DMl-lr-ipC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="62N-3E-aVr" firstAttribute="height" secondItem="4WZ-Fv-EVu" secondAttribute="height" id="26M-F7-V2c"/>
-                            <constraint firstItem="62N-3E-aVr" firstAttribute="height" secondItem="4WZ-Fv-EVu" secondAttribute="height" id="9FU-nH-bn5"/>
-                            <constraint firstItem="62N-3E-aVr" firstAttribute="leading" secondItem="4WZ-Fv-EVu" secondAttribute="trailing" constant="20" id="CVv-Rk-0G1"/>
-                            <constraint firstItem="62N-3E-aVr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U04-JF-jXk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="62N-3E-aVr" secondAttribute="trailing" id="bar-CN-mvV"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="4WZ-Fv-EVu" secondAttribute="leading" id="pNh-5Q-g83"/>
-                            <constraint firstItem="4WZ-Fv-EVu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qbY-gW-ULw"/>
+                            <constraint firstItem="wBh-zc-6kB" firstAttribute="top" secondItem="mVf-b9-4IF" secondAttribute="bottom" constant="24" id="8ni-nc-Its"/>
+                            <constraint firstItem="0tv-pO-0o0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mji-bu-GoG"/>
+                            <constraint firstItem="mVf-b9-4IF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Toj-M4-tEh"/>
+                            <constraint firstItem="mVf-b9-4IF" firstAttribute="top" secondItem="0tv-pO-0o0" secondAttribute="bottom" constant="24" id="ZxI-mT-los"/>
+                            <constraint firstItem="wBh-zc-6kB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZyO-pE-PRw"/>
+                            <constraint firstItem="mVf-b9-4IF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJA-ip-yvZ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="26M-F7-V2c"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="DrinkLink" id="PcC-L6-hmO"/>
                     <connections>
-                        <outlet property="beer" destination="62N-3E-aVr" id="pjE-jm-Y5e"/>
-                        <outlet property="wheel" destination="4WZ-Fv-EVu" id="Z6Q-kK-RQ7"/>
+                        <outlet property="quadcopter" destination="0tv-pO-0o0" id="Oks-P3-p93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +75,7 @@
         <!--Select Bean Table View Controller-->
         <scene sceneID="kcT-7G-5Nf">
             <objects>
-                <tableViewController storyboardIdentifier="SelectBean" id="ddc-vK-991" customClass="SelectBeanTableViewController" customModule="DrinkLink" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SelectBean" id="ddc-vK-991" customClass="SelectBeanTableViewController" customModule="Sugarcrane" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MHE-sv-Upp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,18 +85,18 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zhf-ej-BZ3" id="uvC-Ku-C28">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kZa-mt-2Ak">
-                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lb4-Ql-Qao">
-                                            <rect key="frame" x="543.5" y="12" width="41.5" height="19.5"/>
+                                            <rect key="frame" x="543" y="12" width="42" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -157,10 +147,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="beer" width="250" height="460"/>
-        <image name="wheel" width="488" height="494"/>
+        <image name="quadcopter" width="594" height="369"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="MGU-mp-WwN"/>
-    </inferredMetricsTieBreakers>
 </document>
